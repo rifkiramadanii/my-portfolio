@@ -1,0 +1,111 @@
+.features {
+  padding: 100px 0;
+  background-color: var(--bg-color);
+}
+
+.features-grid {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.feature-card:nth-child(1) {
+  width: 400px;
+  height: 400px;
+  background-image: url(./assets/portfahad.png);
+  background-size: contain;
+  filter: blur(1px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.feature-card:nth-child(2) {
+  width: 400px;
+  height: 400px;
+  background-image: url(./assets/accuracies.png);
+  background-size: contain;
+  filter: blur(1px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.feature-card:nth-child(3) {
+  width: 400px;
+  height: 400px;
+  background-image: url(./assets/KabauFC2.png);
+  background-size: contain;
+  filter: blur(1px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.feature-card:nth-child(4) {
+  width: 400px;
+  height: 400px;
+  background-image: url(./assets/ErikaXwpaP.png);
+  background-size: contain;
+  filter: blur(1px);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.feature-card:hover {
+  transform: scale(1.1)translateY(-10px);
+  filter: blur(0px) drop-shadow(0 0 10px var(--main-color));
+}
+
+.feature-icon {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--bg-color);
+}
+
+.feature-title {
+  color: #111;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1.5rem;
+  color: #111;
+}
+  
+  @media (max-width: 768px) {
+  .features {
+    justify-content: center;
+    padding: 50px 0; /* Reduced padding for mobile */
+  }
+
+  .features-grid {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Reduced gap for mobile */
+  }
+
+  .feature-card {
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Allow height to adjust */
+    min-width: 50%; /* Full width for mobile */
+  }
+
+  .feature-title {
+    font-size: 2rem; /* Smaller title font size for mobile */
+  }
+
+  .feature-description {
+    font-size: 1.2rem; /* Smaller description font size for mobile */
+  }
+}
