@@ -1,4 +1,4 @@
-# Vite JS x React JS Portfolio
+# RESPONSIVE PORTFOLIO (REACT JS & CSS)
 
 Made this responsive portfolio website using React Js and Css for styling this website.
 This the website look like:
